@@ -2,7 +2,7 @@
 examples of how lists are manipulated and used
 in python programs
 '''
-import utils
+import list_utils
 
 def lists_as_sequences():
     # lists are sequences
@@ -21,8 +21,8 @@ def lists_can_contain_other_lists():
     print(my_list)
 
 def lists_are_mutable(): 
-    my_list = utils.random_name_list(5) # creates a new list of random names
+    my_list = list_utils.random_name_list(5) # creates a new list of random names
     # lists are mutable, this means that the list elements can be changed.
     print(f'list -> before change:\n {my_list}')
-    my_list[0] = utils.random_name()
+    my_list[0] = list_utils.random_name()
     print(f'list -> after change:\n {my_list}')
